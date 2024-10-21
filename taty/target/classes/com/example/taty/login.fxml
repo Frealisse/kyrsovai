@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="800.0" minHeight="500.0" minWidth="800.0" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: f1f7ed;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taty.controller.loginController">
+   <children>
+      <AnchorPane prefHeight="97.0" prefWidth="800.0" style="-fx-background-color: #7ca982;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="255.0" layoutY="12.0" prefHeight="66.0" prefWidth="338.0" text="Taty salon" textAlignment="CENTER" textFill="#243e36" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="207.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="Georgia" size="57.0" />
+               </font>
+            </Label>
+            <Button fx:id="k_reg" onAction="#klik" layoutX="608.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: #243e36; -fx-focus-traversable: 1;" text="зарегестрироваться" textFill="#fcfcfc" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="16.0">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </AnchorPane>
+      <TextField fx:id="k_login" layoutX="262.0" layoutY="220.0" prefHeight="29.0" prefWidth="279.0" promptText="Логин" style="-fx-background-color: f1f7ed; -fx-border-color: black; -fx-border-radius: 5;" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="259.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="k_pasword" layoutX="261.0" layoutY="295.0" prefHeight="29.0" prefWidth="279.0" promptText="Пароль" style="-fx-background-color: f1f7ed; -fx-border-color: black; -fx-border-radius: 6;" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="295.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="261.0" layoutY="120.0" maxHeight="66.0" maxWidth="266.0" minHeight="66.0" minWidth="266.0" prefHeight="66.0" prefWidth="266.0" text="Авторизация" textFill="#243e36" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="273.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="Georgia" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="k_vhod" layoutX="338.0" layoutY="378.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="128.0" style="-fx-background-color: #243e36;" text="войти" textFill="#fcfcfc" AnchorPane.leftAnchor="338.0" AnchorPane.rightAnchor="334.0" AnchorPane.topAnchor="378.0">
+         <font>
+            <Font name="Georgia" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
